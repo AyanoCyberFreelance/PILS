@@ -128,14 +128,22 @@
     }
 }
 
-.cart_left_order_inputmd, .cart_left_order_inputsm{
+.cart_left_order_inputsm{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cart_left_order_inputmd{
     display: flex;
     justify-content: space-between;
 }
 
 .cart_left_order_13, .cart_left_order_14{
-            width: 100%;
-            max-width: 500px;
+      min-width: 420px;
+}
+
+.cart_left_order_14{
+    margin-left: 25px;
 }
 
 .cart_left_order_input4, .cart_left_order_input5, .cart_left_order_input6, .cart_left_order_input7{
