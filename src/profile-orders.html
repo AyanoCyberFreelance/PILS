@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"PILS - Profile Orders",
+"description":"Gulp pack for easy html/php markup development",
+"keywords":"",
+"favicon":"img/favicons/PILS1",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main">
+		<div class="container">
+            <ul class="breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li>Профиль</li>
+           </ul>
+           <div class="profile">
+			<div class="profile_blocks">
+				<div class="profile_top">
+					<div class="profile_top_items">
+                        <div class="profile_top_item">
+							<img src="/img/profile/free-icon-user-456283 1.webp" alt="">
+							<p>Личные данные</p>
+						</div>
+						<div class="profile_top_item profile_top_item--active">
+							<img src="/img/profile/free-icon-logistics-3139110 1.webp" alt="">
+							<p>Заказы</p>
+						</div>
+						<div class="profile_top_item">
+							<img src="/img/profile/free-icon-delivery-709790 1.webp" alt="">
+							<p>Доставка</p>
+						</div>
+						<div class="profile_top_item">
+							<img src="/img/profile/free-icon-exit-1286969 1.webp" alt="">
+							<p>Выход</p>
+						</div>
+					</div>
+				</div>
+				<div class="profile_bot">
+					<div class="profile_bot_block">
+						<h4 class="profile_bot_title">Заказы</h4>
+						<div class="profile_bot_category">
+							<div class="profile_bot_category_item">
+								<div class="profile_bot_category_name profile_bot_category_name--active">Все заказы</div>
+								<div class="profile_bot_category_name">Активный</div>
+								<div class="profile_bot_category_name">Завершенный</div>
+								<div class="profile_bot_category_name">Отменено</div>
+								<div class="profile_bot_category_name">Рассрочка</div>
+							</div>
+
+							<div class="profile_bot_warning">
+								<h4 class="profile_bot_warning_title">У вас пока нет заказов</h4>
+								<p class="profile_bot_warning_text">Добавляйте товары,чтобы быстро сравнить их между собой и выбрать лучший вариант</p>
+								<button class="profile_bot_warning_btn">Вернуться на главную</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		   </div>
+		</div>
+
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

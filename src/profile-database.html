@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"PILS - Profile Base",
+"description":"Gulp pack for easy html/php markup development",
+"keywords":"",
+"favicon":"img/favicons/PILS1",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main">
+		<div class="container">
+            <ul class="breadcrumb">
+                <li><a href="#">Главная</a></li>
+                <li>Профиль</li>
+           </ul>
+           <div class="profile">
+			<div class="profile_blocks">
+				<div class="profile_top">
+					<div class="profile_top_items">
+                        <div class="profile_top_item profile_top_item--active">
+							<img src="/img/profile/free-icon-user-456283 1.webp" alt="">
+							<p>Личные данные</p>
+						</div>
+						<div class="profile_top_item">
+							<img src="/img/profile/free-icon-logistics-3139110 1.webp" alt="">
+							<p>Заказы</p>
+						</div>
+						<div class="profile_top_item">
+							<img src="/img/profile/free-icon-delivery-709790 1.webp" alt="">
+							<p>Доставка</p>
+						</div>
+						<div class="profile_top_item">
+							<img src="/img/profile/free-icon-exit-1286969 1.webp" alt="">
+							<p>Выход</p>
+						</div>
+					</div>
+				</div>
+				<div class="profile_bot">
+					<div class="profile_bot_block">
+						<h4 class="profile_bot_title">Личные данные</h4>
+						<div class="profile_bot_form">
+							<div class="profile_bot_left">
+								<div class="profile_bot_item">
+									<div class="profile_bot_name">Имя</div>
+								<div class="profile_bot_input">
+								    <input type="text" placeholder="Имя">
+								</div>
+								</div>
+
+								<div class="profile_bot_item">
+									<div class="profile_bot_name">Дата рождения</div>
+								<div class="profile_bot_input">
+								    <input type="text" placeholder="01.12.2012">
+								</div>
+								</div>
+
+								<div class="profile_bot_item">
+									<div class="profile_bot_name">Пол</div>
+								<div class="profile_bot_input">
+								    <input type="text" placeholder="Мужской">
+								</div>
+								</div>
+
+								<div class="profile_bot_buttons">
+                                      <div class="profile_bot_yellow">
+										<button>Сохранить</button>
+									  </div>
+									  <div class="profile_bot_grey">
+										<button>Отменить</button>
+									  </div>
+								</div>
+							</div>
+
+							<div class="profile_bot_right">
+								<div class="profile_bot_item">
+									<div class="profile_bot_name">Фамилия</div>
+								<div class="profile_bot_input">
+								    <input type="text" placeholder="Фамилия">
+								</div>
+								</div>
+
+								<div class="profile_bot_item">
+									<div class="profile_bot_name">E-mail</div>
+								<div class="profile_bot_input">
+								    <input type="text" placeholder="E-mail">
+								</div>
+								</div>
+
+								<div class="profile_bot_item">
+									<div class="profile_bot_name">Телефон</div>
+								<div class="profile_bot_input">
+								    <input type="text" placeholder="+998 (90) 355-67-32">
+								</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		   </div>
+		</div>
+
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

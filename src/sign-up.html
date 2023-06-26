@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"PILS - Sign Up",
+"description":"Gulp pack for easy html/php markup development",
+"keywords":"",
+"favicon":"img/favicons/PILS1",
+})
+
+<body>
+	@@include('components/page-blocks/_header.html')
+	<main class="main">
+		<div class="container">
+        <ul class="breadcrumb">
+             <li><a href="#">Главная</a></li>
+             <li>Регистрация</li>
+             </ul>
+		</div>
+
+        <form action="/" class="sign_in">
+            <div class="sign_text">
+                <h4>Создать учетную запись</h4>
+                <p>Создайте свою учётную запись и пользуйтесь всеми услугами</p>
+            </div>
+            <div class="sign_input sign_input--up">
+                <span>Имя</span>
+                <br><br>
+                <input class="num_input_2" type="num" name="" id="" placeholder="Имя">
+            </div>
+            <div class="sign_input sign_input--up">
+                <span>Фамилия</span>
+                <br><br>
+                <input class="num_input_2" type="num" name="" id="" placeholder="Фамилия">
+            </div>
+            <div class="sign_input sign_input--up">
+                <span>Номер телефона</span>
+                <br><br>
+                <input class="num_input_2" type="num" name="" id="" placeholder="+998 (___) ___-__-__">
+            </div>
+            <div class="sign_input sign_input--grade">
+                <span>E-mail (необязательно)</span>
+                <br><br>
+                <input class="num_input_2" type="num" name="" id="" placeholder="E-mail">
+            </div>
+            <button type="submit" class="sign_code">
+                Получить код
+            </button>
+
+                <div class="sign_checkbox">
+                <div class="sign_checkbox_input">
+                   <input type="checkbox" value="value-1">
+                </div>
+                <div class="confidity">
+                    <p>
+                      Получать эксклюзивные скидки в SMS-рассылке от PILS</span>
+                    </p>
+                </div>
+            </div>
+            <div class="sign_checkbox">
+                <div class="sign_checkbox_input">
+                   <input type="checkbox" value="value-1">
+                </div>
+                <div class="confidity">
+                    <p>
+                      Согласен с условиями <span>Правил пользования торговой площадкой и правилами возврата</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="sign_links">
+                <a class="in" href="#">Вход</a>
+                <span>|</span>
+                <a class="up in--active" href="#">Регистрация</a>
+            </div>
+        </form>
+	</main>
+	@@include('components/page-blocks/_footer.html')
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

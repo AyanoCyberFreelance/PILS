@@ -1,0 +1,52 @@
+.profile_bot_category_item{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d8d8d8;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.profile_bot_category_name{
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 8px;
+    width: 20%;
+    text-align: center;
+    font-size: 18px;
+
+    &--active{
+        background: #ffae00;
+        color: #fff;
+    }
+}
+
+.profile_bot_warning{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.profile_bot_warning_title{
+    font-size: 20px;
+    color: #000;
+    padding-bottom: 10px;
+}
+
+.profile_bot_warning_text{
+    font-size: 16px;
+    color: #000;
+    padding-bottom: 15px;
+    width: 400px;
+    margin: 0 auto;
+}
+
+.profile_bot_warning_btn{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 8px;
+    border: 0;
+    background: #ffae00;
+    color: #fff;
+}

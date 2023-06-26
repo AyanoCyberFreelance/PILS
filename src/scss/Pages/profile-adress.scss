@@ -1,0 +1,76 @@
+.profile_bot_begin{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #d8d8d8;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+}
+
+.profile_bot_add{
+    button{
+        cursor: pointer;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border-radius: 8px;
+        border: 0;
+        background: #ffae00;
+        color: #fff;
+        font-size: 14px;
+        transition: all .4s linear;
+
+        &:hover{
+            background: #ff9900;
+        }
+    }
+}
+
+.profile_bot_adress{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #d8d8d8;
+    border-radius: 8px;
+    background: #F8F8F8;
+    margin-bottom: 20px;
+}
+
+.profile_bot_adress_item{
+    font-size: 15px;
+    color: #9b9b9b;
+
+    &--1{
+        color: #000;
+    }
+}
+
+.profile_bot_adress_option{
+    display: flex;
+    justify-content: space-between;
+
+    i{
+        cursor: pointer;
+        margin-left: 20px;
+        font-size: 18px;
+    }
+}
+
+.fa-trash-o{
+    color: #9b9b9b;
+    transition: all .3s linear;
+    
+        &:hover {
+            color: #ff0000;
+        }
+}
+
+.fa-pencil{
+    color: #9b9b9b;
+    transition: all .3s linear;
+    
+        &:hover {
+            color: #ff0000;
+        }
+}
