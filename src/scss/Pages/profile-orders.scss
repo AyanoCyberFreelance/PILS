@@ -41,12 +41,19 @@
 }
 
 .profile_bot_warning_btn{
+    cursor: pointer;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 20px;
     padding-right: 20px;
-    border-radius: 8px;
-    border: 0;
-    background: #ffae00;
-    color: #fff;
+    border-radius: 15px;
+    border: 1px solid #ffae00;
+    background: 0;
+    color: #ffae00;
+    transition: all .3s linear;
+
+    &:hover{
+        background: #ffae00;
+        color: #fff;
+    }
 }

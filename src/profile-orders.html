@@ -19,22 +19,30 @@
 			<div class="profile_blocks">
 				<div class="profile_top">
 					<div class="profile_top_items">
-                        <div class="profile_top_item">
-							<img src="/img/profile/free-icon-user-456283 1.webp" alt="">
-							<p>Личные данные</p>
-						</div>
-						<div class="profile_top_item profile_top_item--active">
-							<img src="/img/profile/free-icon-logistics-3139110 1.webp" alt="">
-							<p>Заказы</p>
-						</div>
-						<div class="profile_top_item">
-							<img src="/img/profile/free-icon-delivery-709790 1.webp" alt="">
-							<p>Доставка</p>
-						</div>
-						<div class="profile_top_item">
-							<img src="/img/profile/free-icon-exit-1286969 1.webp" alt="">
-							<p>Выход</p>
-						</div>
+						<form action="profile-database.html" target="_self" class="profile_top_item">
+							<button class="profile_top_btn">
+                                <img src="/img/profile/free-icon-user-456283 1.webp" alt="">
+							    <p>Личные данные</p>
+							</button>
+						</form>
+						<form action="/" target="_self" class="profile_top_item profile_top_item--active">
+							<button class="profile_top_btn">
+                                <img src="/img/profile/free-icon-logistics-3139110 1.webp" alt="">
+							    <p>Заказы</p>
+							</button>
+						</form>
+						<form action="profile-adress.html" target="_self" class="profile_top_item">
+							<button class="profile_top_btn">
+                                <img src="/img/profile/free-icon-delivery-709790 1.webp" alt="">
+							    <p>Доставка</p>
+							</button>
+						</form>
+						<form action="/" target="_self" class="profile_top_item">
+							<button class="profile_top_btn">
+                                <img src="/img/profile/free-icon-exit-1286969 1.png" alt="">
+							    <p>Выход</p>
+							</button>
+						</form>
 					</div>
 				</div>
 				<div class="profile_bot">
@@ -52,7 +60,9 @@
 							<div class="profile_bot_warning">
 								<h4 class="profile_bot_warning_title">У вас пока нет заказов</h4>
 								<p class="profile_bot_warning_text">Добавляйте товары,чтобы быстро сравнить их между собой и выбрать лучший вариант</p>
-								<button class="profile_bot_warning_btn">Вернуться на главную</button>
+								<form action="index.html" target="_self">
+									<button class="profile_bot_warning_btn">Вернуться на главную</button>
+								</form>
 							</div>
 						</div>
 					</div>

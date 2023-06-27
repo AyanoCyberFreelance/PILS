@@ -13,13 +13,21 @@
 }
 
 .profile_top_item{
+    width: 25%;
+    border-radius: 8px;
+    border: 0;
+    cursor: pointer;
+}
+
+.profile_top_btn{
+    display: flex;
     cursor: pointer;
     width: 25%;
-    display: flex;
     align-items: center;
-    border-radius: 8px;
     padding: 10px;
     margin-left: 15px;
+    background: 0;
+    border: 0;
     img{
         background: #fff;
         padding: 8px;
@@ -28,11 +36,13 @@
     p{
         padding-left: 25px;
         font-size: 18px;
+        color: #fff;
     }
 }
 
 .profile_top_item--active{
-    background: #FFB800;
+    background: #ffae00;
+    color: #fff;
 }
 
 .profile_bot_form{
