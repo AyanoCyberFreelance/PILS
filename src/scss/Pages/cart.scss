@@ -47,6 +47,12 @@
             }
 
     }
+
+    button{
+        border: 0;
+        background: 0;
+        padding: 0;
+    }
 }
 
 .cart_left_quantity{
@@ -96,6 +102,7 @@
         font-size: 18px;
     }
 }
+
 
 .cart_left_purple{
     border: 1px solid #934A97;

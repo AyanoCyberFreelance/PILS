@@ -55,18 +55,17 @@
     i{
         font-size: 24px;
     }
-
-        &--active {
-            background: #F8F8F8;
+        &:focus{
+        background: #F8F8F8;
             border: 1px solid #934A97;
-          
-            i{
-              color: #934A97;
-           }
-           
+        
+            i {
+                color: #934A97;
+            }
         }
     
 }
+
 
 .cart_left_order_info1{
     display: flex;

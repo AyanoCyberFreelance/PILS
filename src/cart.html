@@ -22,8 +22,8 @@
          <div class="cart">
                 <div class="cart_block">
                     <div class="cart_left">
-                        <div class="cart_left_cards">
-                            <div class="cart_left_card">
+                        <div class="cart_left_cards" id="prods1">
+                            <div class="cart_left_card" id="prod1">
                             <div class="cart_left_img">
                                 <img src="/img/product/Purifying_Mask_tube.png" alt="" width="50px">
                             </div>
@@ -44,16 +44,16 @@
                                 </button>
                             </div>
                             <div class="cart_left_options">
-                                 <div>
+                                 <button>
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
-                                </div>
-                                <div>
+                                 </button>
+                                <button onclick="delNode(this)">
                                     <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                </div>
+                                </button>
                             </div>
                             </div>
 
-                            <div class="cart_left_card">
+                            <div class="cart_left_card" id="prod2">
                             <div class="cart_left_img">
                                 <img src="/img/product/Purifying_Mask_tube.png" alt="" width="60px">
                             </div>
@@ -74,16 +74,16 @@
                                 </button>
                             </div>
                             <div class="cart_left_options">
-                                 <div>
+                                 <button>
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
-                                </div>
-                                <div>
+                                 </button>
+                                <button onclick="delNode(this)">
                                     <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                </div>
+                                </button>
                             </div>
                             </div>
                             
-                             <div class="cart_left_card">
+                            <div class="cart_left_card" id="prod3">
                             <div class="cart_left_img">
                                 <img src="/img/product/Purifying_Mask_tube.png" alt="" width="50px">
                             </div>
@@ -104,12 +104,12 @@
                                 </button>
                             </div>
                             <div class="cart_left_options">
-                                 <div>
+                                 <button>
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
-                                </div>
-                                <div>
+                                 </button>
+                                <button onclick="delNode(this)">
                                     <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                </div>
+                                </button>
                             </div>
                             </div>
                         </div>
@@ -199,7 +199,7 @@
                                   </ul>
                         </div>
                         <form action="cart-order.html" target="_self" class="cart_right_btn">
-                            <button>Оформить заказ</button>
+                            <button type="submit">Оформить заказ</button>
                         </form>
                         <div class="cart_right_privacy">
                            <div class="confidities">
