@@ -288,16 +288,20 @@
 .specific{
     font-family: 'Poppins', sans-serif;
     margin-bottom: 50px;
-
-    &--comments{
-        display: none;
-    }
 }
 
 .specific_content{
     padding: 30px;
     background: #F8F8F8;
     border-radius: 10px;
+}
+
+.specific_info_1{
+    display: block;
+}
+
+.specific_info_2 {
+    display: none;
 }
 
 .specific_blocks{
