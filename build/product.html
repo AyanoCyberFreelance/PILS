@@ -26,6 +26,7 @@
 	<script src="https://kit.fontawesome.com/1c27991249.js" crossorigin="anonymous"></script>
 	<link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
      <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+	<script src=»//code.jquery.com/jquery-3.5.1.slim.min.js» integrity=»sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj» crossorigin=»anonymous» async ></script>
 	<title>PILS - Product</title>
 </head>
 
@@ -252,15 +253,18 @@
             </div>
         </div>
 
+
+        <div class="special">
+        <div class="specific_buttons">
+             <div class="specific_button_enable">
+                  <button class="option">Описание</button>
+             </div>
+            <div class="specific_button_disable">
+                 <button class="fade" id="show_bar">Отзывы</button>
+             </div>
+        </div>
+
         <div class="specific">
-            <div class="specific_buttons">
-                <div class="specific_button_enable">
-                    <button>Описание</button>
-                </div>
-                <div class="specific_button_disable">
-                    <button>Отзывы</button>
-                </div>
-            </div>
 
             <div class="specific_content">
                 <div class="specific_info">
@@ -323,15 +327,7 @@
             </div>
         </div>
 
-        <div class="specific specific--comments">
-            <div class="specific_buttons">
-                <div class="specific_button_disable">
-                    <button>Описание</button>
-                </div>
-                <div class="specific_button_enable">
-                    <button>Отзывы</button>
-                </div>
-            </div>
+        <div class="specific specific--comments" id="bar_block">
 
             <div class="specific_content">
                 <div class="specific_info">
@@ -541,6 +537,9 @@
                 </div>
             </div>
         </div>
+
+        </div>
+
 
         <div class="name">
             <h1 class="main_title">Недавно просмотренные</h1>

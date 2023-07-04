@@ -26,6 +26,7 @@
 	<script src="https://kit.fontawesome.com/1c27991249.js" crossorigin="anonymous"></script>
 	<link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
      <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
+	<script src=»//code.jquery.com/jquery-3.5.1.slim.min.js» integrity=»sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj» crossorigin=»anonymous» async ></script>
 	<title>PILS - Main</title>
 </head>
 
@@ -129,15 +130,22 @@
 </header>
 
 	<main class="main">
-		<div class="container">
+		<div class="container" id="mydiv">
             <ul class="breadcrumb">
                 <li><a href="#">Главная</a></li>
                 <li>Избранное</li>
            </ul>
-           <h2 class="page_title">
-            Избранное
-          </h2>
-			<div class="products">
+           <div class="favourites_head">
+               <h2 class="page_title">
+                 Избранное
+               </h2>
+               <button class="favourites_btn" id="btn">
+                 <i class="fa fa-trash" aria-hidden="true"></i>
+                 <p>Удалить всё</p>
+               </button>
+           </div>
+
+			<div class="products" id="rmv">
 				<div class="product_cards product_cards--1">
 					<div class="product_card">
                        <div class="product_card_top">

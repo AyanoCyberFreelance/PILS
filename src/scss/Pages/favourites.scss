@@ -1,0 +1,29 @@
+.favourites_head{
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    align-items: center;
+
+    button{
+        background: 0;
+        border: 0;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        color: #8a8a8a;
+        transition: all .3s linear;
+
+        &:hover{
+           color: #ff0000;
+        }
+
+        i{
+            font-size: 20px;
+            padding-right: 10px;
+       }
+    }
+}
+
+.favourites_btn{
+   margin-bottom: 20px;
+}
