@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
-				content="width=device-width, initial-scale=1.0">
+				content="width=device-width, initial-scale=1">
 	<meta name="description"
 				content="Gulp pack for easy html/php markup development">
 	<meta name="keywords"
@@ -27,6 +27,7 @@
 	<link href="/examples/libs/ui-components/itc-slider/itc-slider.css" rel="stylesheet">
      <script src="/examples/libs/ui-components/itc-slider/itc-slider.js" defer></script>
 	<script src=»//code.jquery.com/jquery-3.5.1.slim.min.js» integrity=»sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj» crossorigin=»anonymous» async ></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 	<title>PILS - Main</title>
 </head>
 
@@ -109,19 +110,19 @@
             <div class="header_nav">
                 <div class="nav_list">
                     <a class="nav_link" href="#">
-                        Косметика <i class="fa fa-sort-down"></i>
+                        Косметика
                     </a>
                     <a class="nav_link" href="#">
-                        Женская гигиена <i class="fa fa-sort-down"></i>
+                        Женская гигиена
                     </a>
                     <a class="nav_link" href="#">
-                        Детская гигиена <i class="fa fa-sort-down"></i>
+                        Детская гигиена
                     </a>
                     <a class="nav_link" href="#">
-                        Гигиена полости рта <i class="fa fa-sort-down"></i>
+                        Гигиена полости рта
                     </a>
                     <a class="nav_link" href="#">
-                        Безрецептурные препараты <i class="fa fa-sort-down"></i>
+                        Безрецептурные препараты
                     </a>
                   </div>
             </div>
@@ -133,7 +134,7 @@
 		<div class="container">
 			<div class="banners">
 
-                  <div class="slider middle">
+                <div class="slider middle">
                     <div class="slides">
                           <input type="radio" name="r" id="r1" checked>
                           <input type="radio" name="r" id="r2">
@@ -162,6 +163,7 @@
                 </div>
 
 			</div>
+
 			<div class="name">
 				<h1 class="main_title main_title--1">Хит продаж</h1>
 				<div class="line"></div>
@@ -178,12 +180,24 @@
 						<div class="card_special">ХИТ ПРОДАЖ</div>
 					    <div class="card_options">
 							<div class="card_option">
-								<img src="/img/icons/card/Vector.png" alt="">
-							<a href="#">избранное</a>
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
 							</div>
 							<div class="card_option">
-								<img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							<a href="#">сравнение</a>
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
 							</div>
 						</div>
 						<div class="product_card_content">
@@ -202,172 +216,233 @@
 					   </div>
 					</div>
 					<div class="product_card">
-						<div class="product_card_top">
-						 <a href="product.html">
-                            <img src="/img/element/13 1.png" alt="">
-						 </a>
-						</div>
-						<div class="product_card_bot">
-						 <div class="card_special">ХИТ ПРОДАЖ</div>
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
-						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <a href="product.html">
+                       <div class="product_card_top">
+						<a href="product.html">
                             <img src="/img/element/13 1.png" alt="">
 						</a>
+					   </div>
+					   <div class="product_card_bot">
+						<div class="card_special">ХИТ ПРОДАЖ</div>
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-						 <div class="card_special">ХИТ ПРОДАЖ</div>
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <a href="product.html">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
                             <img src="/img/element/13 1.png" alt="">
 						</a>
+					   </div>
+					   <div class="product_card_bot">
+						<div class="card_special">ХИТ ПРОДАЖ</div>
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-						 <div class="card_special">ХИТ ПРОДАЖ</div>
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <a href="product.html">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
                             <img src="/img/element/13 1.png" alt="">
 						</a>
+					   </div>
+					   <div class="product_card_bot">
+						<div class="card_special">ХИТ ПРОДАЖ</div>
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-						 <div class="card_special">ХИТ ПРОДАЖ</div>
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <a href="product.html">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
                             <img src="/img/element/13 1.png" alt="">
 						</a>
+					   </div>
+					   <div class="product_card_bot">
+						<div class="card_special">ХИТ ПРОДАЖ</div>
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-						 <div class="card_special">ХИТ ПРОДАЖ</div>
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+						<div class="card_special">ХИТ ПРОДАЖ</div>
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
+						</div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
+						</div>
+					   </div>
+					</div>
 				</div>
 			</div>
+
 			<div class="name">
 				<h1 class="main_title">Акции</h1>
 				<div class="line"></div>
@@ -414,6 +489,7 @@
 					</div>
 				</div>
 			</div>
+
 			<div class="name">
 				<h1 class="main_title main_title--2">Новинки</h1>
 				<div class="line"></div>
@@ -422,18 +498,32 @@
 				<div class="product_cards">
 					<div class="product_card">
                        <div class="product_card_top">
-						<img src="/img/element/13 1.png" alt="">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
 					   </div>
 					   <div class="product_card_bot">
 						<div class="card_special card_special--1">НОВИНКИ!</div>
 					    <div class="card_options">
 							<div class="card_option">
-								<img src="/img/icons/card/Vector.png" alt="">
-							<a href="#">избранное</a>
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
 							</div>
 							<div class="card_option">
-								<img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							<a href="#">сравнение</a>
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
 							</div>
 						</div>
 						<div class="product_card_content">
@@ -452,165 +542,236 @@
 					   </div>
 					</div>
 					<div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+						<div class="card_special card_special--1">НОВИНКИ!</div>
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							<div class="card_special card_special--1">НОВИНКИ!</div>
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+						<div class="card_special card_special--1">НОВИНКИ!</div>
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-						 <div class="card_special card_special--1">НОВИНКИ!</div>
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+						<div class="card_special card_special--1">НОВИНКИ!</div>
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							<div class="card_special card_special--1">НОВИНКИ!</div>
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+						<div class="card_special card_special--1">НОВИНКИ!</div>
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							<div class="card_special card_special--1">НОВИНКИ!</div>
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+						<div class="card_special card_special--1">НОВИНКИ!</div>
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							<div class="card_special card_special--1">НОВИНКИ!</div>
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
+					   </div>
+					</div>
 				</div>
 			</div>
 			<div class="banners">
 				<img src="./img/banner/Banners (2).png" alt="">
 			</div>
+
 			<div class="name">
 				<h1 class="main_title">Косметика</h1>
 				<div class="line"></div>
@@ -619,18 +780,31 @@
 				<div class="product_cards">
 					<div class="product_card">
                        <div class="product_card_top">
-						<img src="/img/element/13 1.png" alt="">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
 					   </div>
 					   <div class="product_card_bot">
-						
 					    <div class="card_options">
 							<div class="card_option">
-								<img src="/img/icons/card/Vector.png" alt="">
-							<a href="#">избранное</a>
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
 							</div>
 							<div class="card_option">
-								<img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							<a href="#">сравнение</a>
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
 							</div>
 						</div>
 						<div class="product_card_content">
@@ -649,162 +823,228 @@
 					   </div>
 					</div>
 					<div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-						 
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
+					   </div>
+					</div>
 				</div>
 			</div>
+
 			<div class="name">
 				<h1 class="main_title main_title--3">Детская гигиена</h1>
 				<div class="line"></div>
@@ -813,18 +1053,31 @@
 				<div class="product_cards">
 					<div class="product_card">
                        <div class="product_card_top">
-						<img src="/img/element/13 1.png" alt="">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
 					   </div>
 					   <div class="product_card_bot">
-						
 					    <div class="card_options">
 							<div class="card_option">
-								<img src="/img/icons/card/Vector.png" alt="">
-							<a href="#">избранное</a>
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
 							</div>
 							<div class="card_option">
-								<img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							<a href="#">сравнение</a>
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
 							</div>
 						</div>
 						<div class="product_card_content">
@@ -843,162 +1096,228 @@
 					   </div>
 					</div>
 					<div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-						 
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
+					   </div>
+					</div>
 				</div>
 			</div>
+
 			<div class="name">
 				<h1 class="main_title main_title--3">Женская гигиена</h1>
 				<div class="line"></div>
@@ -1007,18 +1326,31 @@
 				<div class="product_cards">
 					<div class="product_card">
                        <div class="product_card_top">
-						<img src="/img/element/13 1.png" alt="">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
 					   </div>
 					   <div class="product_card_bot">
-						
 					    <div class="card_options">
 							<div class="card_option">
-								<img src="/img/icons/card/Vector.png" alt="">
-							<a href="#">избранное</a>
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
 							</div>
 							<div class="card_option">
-								<img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							<a href="#">сравнение</a>
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
 							</div>
 						</div>
 						<div class="product_card_content">
@@ -1037,168 +1369,234 @@
 					   </div>
 					</div>
 					<div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-						 
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
+					   </div>
+					</div>
 				</div>
 			</div>
+
 			<div class="logos">
 				<div class="logos_group">
-					<div class="logos_item">
+					<div class="logos_item logos_item--1">
 						<img src="/img/logo/2333ой вриант 1.png" alt="" width="100px">
 					</div>
-					<div class="logos_item">
+					<div class="logos_item logos_item--2">
 						<img src="/img/logo/global white-01 1.png" alt="" width="100px">
 					</div>
 					<div class="logos_item">
@@ -1216,22 +1614,36 @@
 			<div class="name">
 				<h1 class="main_title main_title--3">Недавно просмотренные</h1>
 			</div>
-			<div class="products">
+
+			  <div class="products">
 				<div class="product_cards product_cards--1">
 					<div class="product_card">
                        <div class="product_card_top">
-						<img src="/img/element/13 1.png" alt="">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
 					   </div>
 					   <div class="product_card_bot">
-						
 					    <div class="card_options">
 							<div class="card_option">
-								<img src="/img/icons/card/Vector.png" alt="">
-							<a href="#">избранное</a>
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
 							</div>
 							<div class="card_option">
-								<img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							<a href="#">сравнение</a>
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
 							</div>
 						</div>
 						<div class="product_card_content">
@@ -1250,173 +1662,238 @@
 					   </div>
 					</div>
 					<div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-						 
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
-					 <div class="product_card">
-						<div class="product_card_top">
-						 <img src="/img/element/13 1.png" alt="">
+					   </div>
+					</div>
+					<div class="product_card">
+                       <div class="product_card_top">
+						<a href="product.html">
+                            <img src="/img/element/13 1.png" alt="">
+						</a>
+					   </div>
+					   <div class="product_card_bot">
+					    <div class="card_options">
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                    <i class="fa fa-heart" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>избранное</p>
+								</div>
+							</a>
+							</div>
+							<div class="card_option">
+							<a href="#" onclick="return false">
+								<div>
+                                   <i class="fa fa-list" aria-hidden="true"></i>
+								</div>
+								<div>
+									<p>сравнение</p> 
+								</div>
+							</a>
+							</div>
 						</div>
-						<div class="product_card_bot">
-							
-						 <div class="card_options">
-							 <div class="card_option">
-								 <img src="/img/icons/card/Vector.png" alt="">
-							 <a href="#">избранное</a>
-							 </div>
-							 <div class="card_option">
-								 <img src="/img/icons/card/free-icon-bar-chart-5655752 1.webp" alt="">
-							 <a href="#">сравнение</a>
-							 </div>
-						 </div>
-						 <div class="product_card_content">
-							 <H3 class="card_title">Очищающая маска Skinormil Series A</H3>
-							 <div class="card_price">
-								 <p class="price_top">360.000 сўм</p>
-								 <p class="price_bot">260.000 сўм</p>
-							 </div>
-							 <div class="card_buttons">
-								 <button class="card_shop">
-									 <p>В корзину</p>
-									 <img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
-								 </button>
-							 </div>
-						 </div>
+						<div class="product_card_content">
+							<H3 class="card_title">Очищающая маска Skinormil Series A</H3>
+							<div class="card_price">
+								<p class="price_top">360.000 сўм</p>
+								<p class="price_bot">260.000 сўм</p>
+							</div>
+							<div class="card_buttons">
+								<button class="card_shop">
+									<p>В корзину</p>
+									<img src="img/icons/card/free-icon-buy-2550277.png" alt="" width="18px">
+								</button>
+							</div>
 						</div>
-					 </div>
+					   </div>
+					</div>
 				</div>
-			</div>
-		</div>
-		<div class="site_info">
-			<p class="site_text">
+			  </div>
+		    </div>
+
+		    <div class="site_info">
+	          <p class="site_text">
 				PILS.UZ - мультибрендовый магазин детских товаров, уходовой косметики для женщин и мужчин, а также безрецептурных препаратов от ведущих Европейских производителей Франции, США, Литвы, Индии, Германии и Китая по самым лучшим ценам.
 				<br> 
 				<br> 
 				Вся продукция ввезена официально, прошла ряд контрольных проверок и имеет все сертификаты соответствия. Отдельные 
 				линейки уходовых средств имеют клинические испытания и эффективную доказанность. Вы можете получить бесплатную грамотную консультацию от наших специалистов и ознакомиться со всем ассортиментом товаров на сайте.
-
-			</p>
-		</div>
+			  </p>
+		    </div>
 	</main>
 	<footer class="footer">
     <div class="footer_inner">
@@ -1431,20 +1908,19 @@
                 </form>
                 <div class="footer_phone">
                     <img src="/img/footer/icons/headphone.webp" alt="">
-                    <p>Нужна помощь?
-                    <br>Звоните нам:</p>
+                    <p>Нужна помощь?  Звоните нам:
                     <p class="number">+998977574488</p>
                 </div>
             </div>
             <div class="footer_blocks">
-                <div class="footer_block">
+                <div class="footer_block footer_block--1">
                     <div class="footer_logo">
                         <a href="index.html">
                             <img src="/img/logo/PILS1.webp" alt="" width="150px">
                         </a>
                     </div>
                 </div>
-                <div class="footer_block">
+                <div class="footer_block footer_block--2">
                     <h3 class="footer_nav_title">Информация</h3>
                     <ul class="footer_nav">
                         <li class="footer_nav_item">
@@ -1467,7 +1943,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="footer_block">
+                <div class="footer_block footer_block--3">
                     <h3 class="footer_nav_title">Информация</h3>
                     <ul class="footer_nav">
                         <li class="footer_nav_item">
@@ -1489,8 +1965,8 @@
                             <a href="#" class="footer_nav_link">Сотрудничество</a>
                         </li>
                     </ul>
-                </div>
-                <div class="footer_block">
+                </div> 
+                <div class="footer_block footer_block--4">
                     <h3 class="footer_nav_title">Адрес</h3>
                      <p class="footer_info">Ташкент, Яккасарайский район,
                         улица Кушбеги 6.</p>
@@ -1499,7 +1975,7 @@
              <p class="footer_info">info@pils.uz<br>
               (+998) 97 757-44-88 </p>
 
-             <h3 class="footer_nav_title">Контакты</h3>
+             <h3 class="footer_nav_title">Медиа</h3>
              <div class="footer_social">
                 <div class="footer_icons">
                     <img src="/img/footer/icons/Group 47.png" alt="">
@@ -1522,7 +1998,7 @@
              </div>
 
                 </div>
-                <div class="footer_block">
+                <div class="footer_block footer_block--5">
                     <div class="footer_qr">
                         <div class="footer_qr_content">
                             <img src="/img/footer/materials/qr-code (3) 1.png" alt="">

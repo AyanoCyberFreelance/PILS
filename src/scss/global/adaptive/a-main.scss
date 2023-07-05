@@ -1,0 +1,138 @@
+@media (max-width: 1400px) {
+   // Main
+    .main_title {
+        font-size: 20px;
+    }
+
+    .site_text {
+        font-size: 18px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .sale_title {
+        font-size: 18px;
+    }
+
+    .sale_text {
+        font-size: 16px;
+    }
+
+    .sale {
+        img {
+            width: 100%;
+        }
+    }
+
+    .logos_item {
+        img{
+            width: 100%;
+            max-width: 140px;
+        }
+    }
+
+    .logos_item--1, .logos_item--2{
+        img{
+            width: 100%;
+            max-width: 80px;
+        }
+    }
+
+    .product_card:nth-child(6){
+        display: none;
+    }
+}
+
+@media (max-width: 1200px) {
+    // Main
+    .product_card {
+        max-width: 215px;
+    }
+}
+
+@media (max-width: 1140px) {
+    // Main
+    .product_card:nth-child(5) {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    // Main
+   .logos_item:last-child {
+       display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    // Main
+    .site_text{
+        font-size: 16px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .product_card {
+        max-width: 210px;
+    }
+
+    .product_card:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+  // Main
+    .logos_item:nth-child(4) {
+        display: none;
+    }
+}
+
+@media (max-width: 697px) {
+    // Main
+    .product_card:nth-child(3) {
+        display: none;
+    }
+    .product_card {
+        max-width: 180px;
+    }
+
+    .product_card_top{
+        img{
+            width: 100%;
+            max-width: 70px;
+        }
+    }
+
+    .card_option{
+        a{
+            display: block;
+        }
+    }
+
+}
+
+@media (max-width: 481px) {
+    // Main
+    .logos_group{
+        display: block;
+    }
+
+    .logos_item{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 15px;
+    }
+
+    .logos_item:nth-child(4) {
+        display: block;
+    }
+
+    .logos_item:last-child {
+        display: block;
+    }
+}
+
+@media (max-width: 440px) {
+
+}

@@ -1,6 +1,6 @@
 
 .footer_inner{
-    height: 810px;
+    height: auto;
     background: #934A97;
     width: 100%;
     font-family: 'Poppins', sans-serif;
@@ -9,6 +9,8 @@
 .footer_content{
     display: block;
     padding-top: 60px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .footer_logo{
@@ -25,7 +27,6 @@
 	align-items: center;
     background: #F8F8F8;
     border-radius: 15px;
-    margin-top: 40px;
 }
 
 .footer_submit_text{
@@ -43,7 +44,7 @@
       position: absolute;
       top: 0;
       bottom: 0;
-      right: 25px;
+      right: 20px;
       margin: auto 0;
       width: 25px;
       height: 25px;
@@ -79,15 +80,15 @@
     }
 
     p{
-        font-size: 14px;
+        font-size: 16px;
         color: #000000;
         font-family: 'Poppins', sans-serif;
     }
 
     .number{
         font-weight: 600;
-        padding-top: 17px;
-        margin-left: -10px;
+        margin-left: 10px;
+        font-size: 18px;
     }
 }
 
@@ -101,7 +102,7 @@
     margin-top: 50px;
     padding-top: 50px;
     border-top: 1px solid #f8f8f8b6;
-    margin-bottom: 150px;
+    padding-bottom: 80px;
 }
 
 .footer_copyright{

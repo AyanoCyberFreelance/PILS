@@ -9,6 +9,9 @@
 .banners{
 	padding-top: 20px;
     cursor: pointer;
+    img{
+        width: 100%;
+    }
 }
 
 .banners--1{
@@ -149,7 +152,6 @@
 
 .card_options{
     display: flex;
-    justify-content: space-between;
     background: #F8F8F8;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -157,17 +159,25 @@
 }
 
 .card_option{
-    cursor: pointer;
-    display: flex;
-    align-items: center;
     padding-left: 15px;
-    padding-right: 15px;
    a{
-    color: #000000;
-   text-decoration: none;
-   font-size: 10px;
-   padding-left: 10px;
+       display: flex;
+       align-items: center;
+       text-decoration: none;
+       color: #934A97;
+       transition: all .3s linear;
+       i{
+        font-size: 18px;
+       }
+       p{
+        font-size: 13px;
+        padding-left: 5px;
+       }
+       &:focus{
+         color: #ff9900;
+       }
    }
+   
 }
 
 .product_card_content{
@@ -178,7 +188,7 @@
 .card_special{
 text-align: center;
 font-size: 14px;
-background: #fbc207;
+background: #fbae07;
 color: #Fff;
 font-weight: 600;
 padding-top: 7px;
@@ -188,6 +198,9 @@ padding-bottom: 5px;
     background: #4682db;
 }
 
+&--2{
+    background: #ff2d2d;
+}
 
 }
 
@@ -207,14 +220,15 @@ padding-bottom: 5px;
 }
 
 .price_top{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 600;
     color: #697475;
     text-decoration:line-through;
+    padding-bottom: 5px;
 }
 
 .price_bot{
-    font-size: 16px;
+    font-size: 18px;
     color: #934A97;
     font-weight: 600;
 }
@@ -232,12 +246,12 @@ padding-bottom: 5px;
     padding: 10px;
     display: flex;
     justify-content: space-between;
-    transition: all 0.4s linear;
+    transition: all 0.3s linear;
     p{
         padding-right: 10px;
     }
 
-    &:hover{
-        background: #c866cf;
+    &:focus{
+        background: #ffaf01;
     }
 }
