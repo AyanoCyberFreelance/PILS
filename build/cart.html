@@ -109,7 +109,7 @@
         <div class="header_block_3">
             <div class="header_nav">
                 <div class="nav_list">
-                    <a class="nav_link" href="#">
+                    <a class="nav_link" href="category.html">
                         Косметика
                     </a>
                     <a class="nav_link" href="#">
@@ -140,8 +140,8 @@
 				Корзина
 			  </h2>
 
-         <div class="cart">
-                <div class="cart_block">
+         <div class="cart" id="rmv">
+            <div class="cart_block">
                     <div class="cart_left">
                         <div class="cart_left_cards" id="rmv">
                             <div class="cart_left_card" id="prod1">
@@ -155,14 +155,10 @@
                             <div class="cart_left_price">
                                 <p class="cart_left_money">170 000 сум</p>
                             </div>
-                            <div class="cart_left_quantity">
-                                 <button class="cart_left_minus" >
-                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                </button>
-                                <input class="cart_left_num" value="1"/>
-                                 <button class="cart_left_plus">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                </button>
+                            <div class="cart_left_count">
+                              <div class="cart_left_minus" data-change="-1">-</div>
+                              <div class="cart_left_number">1 шт</div>
+                              <div class="cart_left_plus" data-change="+1">+</div>
                             </div>
                             <div class="cart_left_options">
                                  <button>
@@ -176,7 +172,7 @@
 
                             <div class="cart_left_card" id="prod2">
                             <div class="cart_left_img">
-                                <img src="/img/product/Purifying_Mask_tube.png" alt="" width="60px">
+                                <img src="/img/product/Purifying_Mask_tube.png" alt="" width="50px">
                             </div>
                             <div class="cart_left_names">
                                 <h5 class="cart_left_title">Зубная паста</h5>
@@ -185,14 +181,10 @@
                             <div class="cart_left_price">
                                 <p class="cart_left_money">170 000 сум</p>
                             </div>
-                            <div class="cart_left_quantity">
-                                 <button class="cart_left_minus cart_left_minus--2" >
-                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                </button>
-                                <input class="cart_left_num cart_left_num--2" value="1"/>
-                                 <button class="cart_left_plus cart_left_plus--2">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                </button>
+                             <div class="cart_left_count">
+                              <div class="cart_left_minus" data-change="-1">-</div>
+                              <div class="cart_left_number">1 шт</div>
+                              <div class="cart_left_plus" data-change="+1">+</div>
                             </div>
                             <div class="cart_left_options">
                                  <button>
@@ -215,20 +207,16 @@
                             <div class="cart_left_price">
                                 <p class="cart_left_money">170 000 сум</p>
                             </div>
-                            <div class="cart_left_quantity">
-                                 <button class="cart_left_minus cart_left_minus--3" >
-                                    <i class="fa fa-minus" aria-hidden="true"></i>
-                                </button>
-                                <input class="cart_left_num cart_left_num--3" value="1"/>
-                                 <button class="cart_left_plus cart_left_plus--3">
-                                    <i class="fa fa-plus" aria-hidden="true"></i>
-                                </button>
+                             <div class="cart_left_count">
+                              <div class="cart_left_minus" data-change="-1">-</div>
+                              <div class="cart_left_number">1 шт</div>
+                              <div class="cart_left_plus" data-change="+1">+</div>
                             </div>
                             <div class="cart_left_options">
                                  <button>
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                  </button>
-                                <button onclick="delNode(this)">
+                                <button onclick="switchVisible()">
                                     <i class="fa fa-trash-o" aria-hidden="true"></i>
                                 </button>
                             </div>
@@ -241,7 +229,7 @@
                             <div class="cart_left_grey">
                                 <button>Обновить корзину</button>
                             </div>
-                            <div class="cart_left_red" id="btn">
+                            <div class="cart_left_red" onclick="switchVisible()">
                                 <button>Очистить корзину</button>
                             </div>
                         </div>
@@ -330,8 +318,21 @@
                           </div>
                         </div>
                     </div>
-                </div>
+            </div>
          </div>
+
+		 <div class="hollow_page" id="act" style="display: none; margin-top: 100px;">
+                <div class="hollow_page_item">
+                    <div class="hollow_page_image">
+                        <img src="/img/page-icons/warning (2).png" alt="" width="150px">
+                    </div>
+                    <h3 class="hollow_page_title">У вас пока нет заказов</h3>
+                    <p class="hollow_page_text">Начните с подбора на главной странице или воспользуйтесь категориям чтобы добавить товар</p>
+                    <form action="index.html" target="_self">
+                         <button class="hollow_page_btn">Вернуться на главную</button>
+                    </form>
+                </div>
+              </div>
 
           <div class="name">
                 <h1 class="main_title">Недавно просмотренные</h1>

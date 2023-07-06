@@ -1,0 +1,132 @@
+.specific_accordion {
+    margin: 10px 0 0;
+}
+
+.specific_accordion_trigger {
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    background: 0;
+    border: 0;
+    background: #934A97;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.specific_accordion_content{
+    padding: 30px;
+    background: rgb(248, 248, 248);
+    height: auto;
+}
+
+.specific_accordion_1, .specific_accordion_2 {
+    overflow: hidden;
+    height: 0;
+    transition: height 0.5s;
+    margin: 0;
+}
+
+.special {
+    font-family: 'Poppins', sans-serif;
+}
+
+.specific {
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 50px;
+}
+
+.specific_content {
+    padding: 30px;
+    background: #F8F8F8;
+    border-radius: 10px;
+}
+
+.specific_blocks {
+    display: flex;
+}
+
+.specific_left {
+    width: 60%;
+}
+
+.specific_right {
+    width: 40%;
+    margin-left: 30px;
+}
+
+.specific_title {
+    font-size: 24px;
+    color: #934A97;
+    margin-bottom: 20px;
+}
+
+.specific_left_title {
+    font-size: 20px;
+    font-weight: 600;
+    color: #000000;
+    padding-bottom: 15px;
+}
+
+.specific_left_text {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    padding-bottom: 15px;
+    line-height: 1.4;
+}
+
+.specific_left_quality {
+    font-size: 16px;
+    font-weight: 400;
+    color: #934A97;
+    padding-bottom: 15px;
+
+    i {
+        font-size: 22px;
+    }
+}
+
+.specific_review {
+    border-bottom: 1px solid #d8d8d8;
+    margin-bottom: 25px !important;
+    padding-bottom: 15px;
+    width: 100%;
+}
+
+.specific_review_top {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.specific_review_icon {
+    margin-right: 15px;
+
+    img {
+        border-radius: 45px !important;
+    }
+}
+
+.specific_review_Name {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000000;
+    padding-bottom: 8px;
+}
+
+.specific_review_star {
+    margin-bottom: 5px;
+
+    i {
+        font-size: 18px;
+        color: #ff9900;
+    }
+}
+
+.specific_review_bot {
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+    margin-left: 5px;
+}

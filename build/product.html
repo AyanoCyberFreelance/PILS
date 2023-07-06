@@ -109,7 +109,7 @@
         <div class="header_block_3">
             <div class="header_nav">
                 <div class="nav_list">
-                    <a class="nav_link" href="#">
+                    <a class="nav_link" href="category.html">
                         Косметика
                     </a>
                     <a class="nav_link" href="#">
@@ -257,19 +257,15 @@
 
     <div class="special">
 
-        <div class="specific">
-
-            <div class="specific_buttons">
-             <div class="specific_button_enable">
-                  <button class="option" id="btn1" onclick="viewdiv('div1');">Описание</button>
-             </div>
-            <div class="specific_button_disable">
-                 <button class="fade" id="btn2" onclick="viewdiv('div2');">Отзывы</button>
-             </div>
-           </div>
-
-            <div class="specific_content">
-                <div class="specific_info specific_info_1" id="div1">
+        <dl>
+          <dt class="specific_accordion js-accordion">
+            <button class="specific_accordion_trigger" type="button">
+              Описание
+            </button>
+          </dt>
+          <dd class="specific_accordion_1">
+            <div class="specific_accordion_content">
+               <div class="specific_info specific_info_1">
                     <h4 class="specific_title">О товаре</h4>
                     <div class="specific_blocks">
                         <div class="specific_left">
@@ -326,8 +322,16 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="specific_info specific_info_2" id="div2">
+            </div>
+          </dd>
+         <dt class="specific_accordion js-accordion">
+            <button class="specific_accordion_trigger" type="button">
+              Отзывы
+            </button>
+          </dt>
+          <dd class="specific_accordion_2">
+            <div class="specific_accordion_content">
+               <div class="specific_info specific_info_2">
                     <h4 class="specific_title">Все отзывы</h4>
                     <div class="specific_reviews">
                         <div class="specific_review">
@@ -533,8 +537,8 @@
                     </div>
                 </div>
             </div>
-
-        </div>
+          </dd>
+        </dl>
 
      </div>
 
