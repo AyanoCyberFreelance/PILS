@@ -152,12 +152,20 @@
                                 <button>
                                     <i class="fa fa-pencil" aria-hidden="true"></i>
                                 </button>
-                                <button onclick="delNode(this)">
+                                <button onclick="switchVisible()">
                                     <i class="fa fa-trash-o" aria-hidden="true"></i>
                                 </button>
                             </div>
                         </div>
                         </div>
+
+                        <div class="profile_bot_warning" style="display: none;" id="closed_page">
+							<h4 class="profile_bot_warning_title">Вы ещё не указали ни один адрес</h4>
+							<p class="profile_bot_warning_text">Добавляйте новые адреса, чтобы мы могли по ним быстро доставить ваш товар</p>
+							<form action="index.html" target="_self">
+								<button class="profile_bot_warning_btn">Вернуться на главную</button>
+							</form>
+						</div>
                         
 					</div>
 				</div>

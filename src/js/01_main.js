@@ -17,7 +17,19 @@ function switchVisible() {
                     document.getElementById('btnS').style.display = 'none';
                 }
             }
+
+            if (document.getElementById('adress5')) {
+
+                if (document.getElementById('adress5').style.display == 'block') {
+                    document.getElementById('closed_page').style.display = 'none';
+                }
+                else {
+                    document.getElementById('closed_page').style.display = 'block';
+                    document.getElementById('adress5').style.display = 'none';
+                }
+            }
 }
+
 
 // Отображение и исчезновение пунктов описание\отзыв на странице товара
  function viewdiv(id) {
@@ -50,6 +62,8 @@ $('.cart_left_count').click(function(e) {
   const change = +e.target.dataset.change;
   if (change) {
     $('.cart_left_number', this).text((i, text) => `${parseInt(text, 10) + change} шт`);
+  } else {
+    $('.cart_left_money', this).text((i, text) => `${parseInt(text, 10) + change} сум`);
   }
 });
 
@@ -109,6 +123,75 @@ function accordion(element) {
 
 const elements = [...document.querySelectorAll('.js-accordion')];
 elements.forEach(accordion);
+
+
+// Счётчик увеличения итоговой суммы добавленных товаров
+$(document).ready(function() {
+  var current = 170000;
+  $('.cart_left_plus--1').click(function() {
+    current += 170000;
+    $('.cart_left_money--1').html(current + 'сум');
+  });
+  $('.cart_left_minus--1').click(function() {
+    current -= 170000;
+    $('.cart_left_money--1').html(current + 'сум');
+  });
+});
+
+$(document).ready(function() {
+  var current = 170000;
+  $('.cart_left_plus--2').click(function() {
+    current += 170000;
+    $('.cart_left_money--2').html(current + 'сум');
+  });
+  $('.cart_left_minus--2').click(function() {
+    current -= 170000;
+    $('.cart_left_money--2').html(current + 'сум');
+  });
+});
+
+$(document).ready(function() {
+  var current = 170000;
+  $('.cart_left_plus--3').click(function() {
+    current += 170000;
+    $('.cart_left_money--3').html(current + 'сум');
+  });
+  $('.cart_left_minus--3').click(function() {
+    current -= 170000;
+    $('.cart_left_money--3').html(current + 'сум');
+  });
+});
+
+$(document).ready(function() {
+  var current = 510000;
+  $('.cart_left_plus').click(function() {
+    current += 170000;
+    $('.item__cor__final').html(current + 'сум');
+  });
+  $('.cart_left_minus').click(function() {
+    current -= 170000;
+    $('.item__cor__final').html(current + 'сум');
+  });
+});
+
+$(document).ready(function() {
+  var current = 510000;
+  $('.cart_left_plus').click(function() {
+    current += 170000;
+    $('.item__cor__som').html(current + 'сум');
+  });
+  $('.cart_left_minus').click(function() {
+    current -= 170000;
+    $('.item__cor__som').html(current + 'сум');
+  });
+});
+
+// Функции увеличения фото на странице товара при наведении или нажатии
+$('#zoom_04').ezPlus({
+    zoomType: 'lens',
+    lensShape: 'round',
+    lensSize: 150
+});
 
 
     

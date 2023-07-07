@@ -163,12 +163,13 @@
   }
 
   .footer_icons{
-    img{
-        cursor: pointer;
+    a{
         padding-left: 10px;
-        &:first-child{
-            padding: 0;
-        }
+        cursor: pointer;
+        
+            &:first-child {
+                padding: 0;
+            }
     }
   }
 

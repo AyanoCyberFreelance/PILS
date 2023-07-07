@@ -70,7 +70,15 @@
     &:hover{
         background: #934A97;
         border: 1px solid #934A97;
+        a{
         color: #fff;
+        }
+    }
+
+    a{
+        color: #934A97;
+        text-decoration: none;
+        transition: .3s linear;
     }
 }
 
