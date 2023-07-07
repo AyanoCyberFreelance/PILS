@@ -257,3 +257,18 @@ $('#main_bg').on('click', function() {
 $('#main_bg').on('click', function() {
   $(".d2").removeClass("shadow");
 });
+
+// Функция всплывающего предупреждения
+$(document).on('click', '.add-to-cart', function (e) {
+  var tekst = $('<div style="display:flex; margin-top: 10px;" id="message-success1"><i class="fa fa-exclamation-circle" aria-hidden="true"></i><p style="padding-left:5px;">Пожалуйста, заполните все формы для оформления заказа!</p></div>'),
+      linc = $('#jGrowl');
+  linc.html(tekst).fadeIn(); 
+  setTimeout(function() {linc.fadeOut();}, 6000);
+});
+
+$(document).on('click', '.add-to-cart', function (e) {
+  var tekst = $('<div style="display:flex; justify-content:center; margin-top: -20px;margin-bottom: 20px; padding-right: 70px;" id="message-success2"><i class="fa fa-exclamation-circle" aria-hidden="true"></i><p style="padding-left:5px; font-size: 13.5px;color: #ff0000;">Пожалуйста, заполните все формы для оформления заказа!</p></div>'),
+      linc = $('#jGrowl1');
+  linc.html(tekst).fadeIn(); 
+  setTimeout(function() {linc.fadeOut();}, 6000);
+});
