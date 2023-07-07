@@ -75,10 +75,11 @@
                 </div>
                 <div class="header_search">
                     <div class="d1">
-                        <form>
-                        <input type="text" placeholder="Искать здесь...">
-                        <button type="submit"></button>
+                        <form id="form_bg">
+                         <input type="text" placeholder="Искать здесь...">
+                         <button type="submit"></button>
                         </form>
+                        <div class="d2"></div>
                       </div>
                 </div>
                 <div class="header_menu">
@@ -136,7 +137,7 @@
     </div>  
 </header>
 
-	<main class="main">
+	<main class="main" id="main_bg">
 		<div class="container">
 			<div class="banners">
 
@@ -1901,6 +1902,20 @@
 			  </p>
 		    </div>
 	</main>
+	<div>
+		 <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+    <symbol id="arrow-up-short" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z" />
+    </symbol>
+  </svg>
+
+
+  <div class="btn-up btn-up_hide">
+    <svg class="btn-up-icon" role="img" aria-label="Прокрутить страницу к началу">
+      <use xlink:href="#arrow-up-short"></use>
+    </svg>
+  </div>
+	</div>
 	<footer class="footer">
     <div class="footer_inner">
         <div class="footer_content">
