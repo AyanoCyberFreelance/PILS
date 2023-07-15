@@ -166,15 +166,32 @@ form {
 
   .header_menu{
 	display: flex;
+	&--mobile{
+		display: none;
+	}
 }
 
-.header_item{
+
+
+.header_item--1{
 	display: flex;
 	flex-flow:row nowrap;
 	align-items: center;
 	padding-left: 10px;
 	padding-right: 10px;
 	cursor: pointer;
+
+	i{
+		font-size: 25px;
+		color: #ffffff;
+	}
+}
+
+.header_item--2{
+	i {
+		font-size: 25px;
+		color: #934A97;
+	}
 }
 
 .header_item_link{
